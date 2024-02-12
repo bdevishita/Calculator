@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xlmns="http://w3.org/1999/xhtml">
+<head>
+
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<script language="javaScript" type="text/javaScript" src="index.js">
+</script>
+<br  />
+
+<br  />
+
+<br  />
+
+<form method="post" name="basicCalc" id="basicCalc">
+  <table class="body">
+    <tr id="body">
+
+      <tr>
+        <!-- Input Area -->
+        <td colspan="4" align="center">
+          <input class="display" name="txtbox_area" id="txtbox_area" maxlength="1000" size="45" value="0" type="text"></td>
+        <td align="center">&nbsp;</td>
+
+      </tr>
+      
+      <tr>
+
+        <td align="center"><input class="operand" name="btclear" value="  C/CE  " onClick="Clear()" type="button"></td>
+        
+        <td align="center"><input class="operand" name="rounding" value=" ^ " onClick="AddAChar('**')" type="button"></td>
+
+        <td align="center"><input class="operand" name="Sqrt" value=" sqrt " onClick="sqrt()" type="button"></td>
+
+        <td align="center"><input class="operand" name="M" value=" M " onClick="" type="button"></td>
+
+      
+      </td>
+
+      <tr>
+        <td align="center"><input class="operand" name="rounding" value=" round " onClick="Round()" type="button"></td>
+
+        <td align="center"><input class="operand" name="neg" value="  +/-  " onClick="negative()" type="button"></td>
+
+        <td align="center"><input class="operand" name="Percent" value="  %  " onClick="percent()" type="button"></td>
+
+        <td align="center"><input class="operand" name="btmult" value="  x  " onClick="AddAChar('*')" type="button">
+        
+      </tr>
+
+      <tr>
+
+        <td align="center"><input class="number" name="Seven" value="  7  " onClick="AddAChar('7')" type="button"></td>
+        
+        <td align="center"><input class="number " name="Eight" value="  8  " onClick="AddAChar('8')" type="button"></td>
+        
+        <td align="center"><input class="number" name="Nine" value="  9  " onClick="AddAChar('9')" type="button"></td>
+
+        <td align="center"><input class="operand" name="btdiv" value="  /  " onClick="AddAChar('/')" type="button"></td>
+
+
+      </tr>
+
+      <tr>
+
+        <td align="center"><input class="number" name="Four" value="  4  " onClick="AddAChar('4')" type="button"></td>
+        
+        <td align="center"><input class="number" name="Five" value="  5  " onClick="AddAChar('5')" type="button"></td>
+        
+        <td align="center"><input class="number" name="Six" value="  6  " onClick="AddAChar('6')" type="button"></td>
+
+      <td align="center"><input class="operand" name="btplus" value="  +  " onClick="AddAChar('+')" type="button"></td>
+
+        
+
+      </tr>
+
+        <td align="center"><input class="number" name="One" value="  1  " onClick="AddAChar('1')" type="button"></td>
+      
+        <td align="center"><input class="number" name="Two" value="  2  " onClick="AddAChar('2')" type="button"></td>
+      
+        <td align="center"><input class="number" name="Three" value="  3  " onClick="AddAChar('3')" type="button"></td>
+
+        <td align="center"><input class="operand" name="btsub" value="  -  " onClick="AddAChar('-')" type="button"></td>
+
+        
+
+      <tr>
+
+        <td align="center"><input class="number" name="Zero" value="  0  " onClick="AddAChar('0')" type="button"></td>
+          
+        <td align="center"><input class="number" name="TwoZeroes" value="  00  " onClick="AddAChar('00')" type="button"></td>
+          
+        <td align="center"><input class="number" name="dot" value="  .  " onClick="AddAChar('.')" type="button"></td>
+
+        <td align="center"><input class="operand" name="equals" value="     =     " onClick="Answer()" type="button"></td>
+
+        <br/><br/>
+      </tr>
+    </tr>
+
+    </tbody>
+  </table>
+</form>
+</body>
+</html>
+
+
+
